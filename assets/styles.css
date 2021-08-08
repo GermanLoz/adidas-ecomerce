@@ -1,0 +1,988 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.button-search{
+    display: none;
+    background:rgba(124, 122, 122, 0.11);
+    position: absolute;
+    right:8rem;
+    margin-top: -3.4rem;
+    padding: 0px 11px 0px 5px;
+}
+.menu-button{
+    display: none;
+}
+.close-search{
+    display: none;
+    position:absolute;
+    background:none;
+    border: none;
+    margin-top: -0.9rem;
+}
+.close-search i{
+    margin-top: -1rem;
+    font-size: 22px;
+}
+.close{
+    display: none;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    border-bottom: 1px solid rgba(37, 37, 37, 0.438);
+    width:20%;
+    margin: 15px 0px 0px 18px;
+    font-family: 'Kanit', sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+}
+.logo img{
+    position: absolute;
+    float: left;
+    width: 97px;
+    z-index: 120;
+    margin:5px 0px 0px 10px;
+}
+.logo-res{
+    display: none;
+}
+.logo-res img{
+    position: absolute;
+    float: left;
+    width: 97px;
+    z-index: 120;
+    margin:5px 0px 0px 10px;
+}
+nav{
+    position: relative;
+    z-index: 100;
+    height:4.7rem;
+    border-bottom: 1px solid rgba(141, 141, 141, 0.438);
+    background: #fff;
+    display:flex;
+    margin: auto;
+    justify-content: center;
+}
+nav li{
+    display: inline-block;
+    margin: 14px 11px; 
+}
+ nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-family: "AdihausDIN Cn",Helvetica, Arial, sans-serif;
+    padding:13px 0px;
+    letter-spacing:1px;
+    font-weight: 750;
+    font-size:14px;
+}
+.search form{
+    display: flex;
+}
+.search{
+    background:rgba(124, 122, 122, 0.11);
+    position: absolute;
+    right:8rem;
+    margin-top: -0.7rem;
+    padding: 0px 11px 0px 5px;
+}
+.search i{
+    margin-right: 2px;
+    margin-top:0.8rem ;
+}
+.search input[type="submit"]{
+    background: red;
+    width:2.4rem;
+    background: none;
+    color: rgba(0, 0, 0, 0);
+    right: 0%;
+    margin-top: 0px;
+    height:100%;
+    position: absolute;
+}
+.search input{
+    width:7.4rem;
+    font-size: 13px;
+    padding-left: 5px;
+    border: none;
+    font-family: "AdihausDIN Cn",Helvetica, Arial, sans-serif;
+    background:none;
+    outline: none;
+}
+.user-nav{
+    margin-top: 0.8rem;
+    position: absolute;
+    right:2rem;
+}
+.user-nav i{
+    font-size: 19px;
+}
+.user-nav-user{
+    margin-top: 0.8rem;
+    position: absolute;
+    right:5rem;
+}
+.user-nav-user i{
+    font-size: 19px;
+}
+/*PRODUCTS*/
+.inicio{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+}
+.text-inicio{
+    z-index: 90;
+    position: absolute;
+    margin-top: 29vh;
+    margin-left: 3rem;
+}
+.text-inicio h1{
+    font-size: 2.5rem;
+    width:400px;
+    letter-spacing:0px;
+    border: none;
+    font-style: normal;
+    color:#fff;
+    margin:0px;
+    line-height:36px;
+}
+.text-inicio p{
+    color: #fff;
+    padding-top: 14px;
+    letter-spacing:0.6px;
+    font-style: normal;
+    font-family: "AdihausDIN Cn",Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+}
+.text-inicio .button-realizar{
+    width: 13.8rem;
+    font-weight: 600;
+    margin: 1rem 0rem;
+    background:#ffff;
+    color: #000;
+}
+.text-inicio .button-realizar::after{
+    margin: 0px 0rem 0px -9.5rem;
+    border: 1px solid #fff;
+}
+.text-inicio .button-realizar i {
+    margin-left: 26px;
+}
+.inicio{
+    max-height: 100vh;
+}
+.inicio video{
+    margin: 0px;
+    margin-top: -9rem;
+    width: 100%;
+}
+.cont-product{
+    width:90%;
+    display:grid;
+    align-items: center;
+    margin: 50px 0px 0px 3%;
+    grid-template-columns:auto auto auto auto ;
+}
+.product{
+    height:100%;
+    max-height: 22rem;
+    justify-content: center;
+    margin:10px 3px;
+    align-items: center;
+    text-align: center;
+    width:auto;
+    border: 1px solid #fff;
+}
+.product:hover{
+    border: 1px solid #000;
+}
+.product img{
+    display:flex;
+    margin: auto;
+    width:22.4vw;
+}
+.cat-product{
+    letter-spacing:0px;
+    font-style: normal;
+    font-family: "AdihausDIN Cn",Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    padding-top: -1px;
+    padding-left: 15px;
+}    
+.product .title-product{
+    font-size:12px;
+    text-align: left;
+    padding-top: 4px;
+    padding-left: 15px;
+    letter-spacing:0px;
+    font-style: normal;
+    font-family: "AdihausDIN Cn",Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+#des{
+    background:none;
+    list-style: none;
+    padding: 0px;
+}
+#des p {
+    color: #141414;
+}
+.detalle .pago{
+    position: fixed;
+    width:23rem;
+    height:120%;
+    margin-top: -10rem;
+    padding-top: 10rem;
+}
+.pago{
+    display: flex;
+    border-left: 1px solid rgb(158, 157, 157);
+    border-bottom: 1px solid rgb(158, 157, 157);
+}
+.pago .title-product{
+    padding: 0rem;
+}
+.pago .precio-product{
+    margin-top: 6.7rem;
+    margin-left: 2.1rem;
+    font-size: 18px;
+    font-weight: bolder;
+    background: none;
+}
+.pago a{
+    margin-top: 15rem;
+}
+.detalle .pago .button-pedido{
+    width: 18rem;
+    margin-left: 2.5rem;
+    letter-spacing:0.3px;
+    padding-left: 18px;
+}
+.detalle .pago .button-pedido::after{
+    padding-right: 17rem;
+    margin-left: -9.65rem;
+}
+.detalle .pago .button-pedido i{
+    margin-left: 6.3rem;
+}
+.detalle .pago .title-product{
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin: 1rem 5px;
+    letter-spacing: 0px;
+    line-height:31px;
+    font-family: 'Inconsolata', monospace;
+    font-style: italic;
+}
+
+/*DESCRIION         */
+.description .title-product{
+    font-size: 2rem;
+    font-style:inherit;
+    font-family: 'Inconsolata', monospace;
+    margin:1rem 5px;
+    font-weight: 800;
+}
+.description .descripcion{
+    font-size: 15px;
+    font-weight: 200;
+    color: #4e4d4d;
+    margin-top: 2rem;
+    line-height:21px;
+    margin-left: 15px;
+    font-family: "AdihausDIN",Helvetica,Arial,sans-serif;
+    height:auto;
+}
+.detalle .description {
+    width:100%;
+    display:grid;
+    margin-top: 3rem;
+    min-height:80vh;
+    grid-template-columns:40% 60%;
+}
+.bor{
+    border-left: 1px solid #b8b7b7;
+}
+.detalle{
+    background:#fff;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    width:100%;
+    margin-bottom: 2rem;
+    text-align: center;
+    min-height:85vh;
+    height:auto;
+}
+.detalle img {
+    width: 30vw;
+    height:auto;
+}
+.detalle .precio-product{
+    padding: 5px 0rem;
+}
+.title-des{
+    margin: 15px 0px 0px 18px;
+    font-family: 'Kanit', sans-serif;
+    font-style: italic;
+    font-size: 1.9rem;
+    font-weight: 600;
+    text-align: center;
+}
+.product a{
+    list-style: none;
+    text-decoration: none;    
+}
+.precio-product{
+    position: absolute;
+    font-style: normal;
+    margin-left: 10px;
+    margin-top: -0.97rem;
+    font-size: 14px;
+    letter-spacing:2px;
+    font-family: 'Barlow Condensed', sans-serif;
+    background:#fff;
+    font-weight: 500;
+}
+#aside{
+    margin-top: 3.8rem;
+    width:27%;
+    float: right;
+    margin-right:  2%;
+}
+#login{
+    width:100%;
+}
+form input{
+    border: 2px solid #000;
+    color:#000;
+    padding-left:5px;
+    font-size: 18px;
+    margin: 15px 0px;
+    width: 100%;
+    display:block;
+}
+form a{
+    border: 2px solid #000;
+    color:#000;
+    padding-left:5px;
+    font-size: 18px;
+    margin: 15px 0px;
+    width: 100%;
+    display:block;
+    text-align: center;
+}
+.pedido-agrega{
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-left: 6.3rem;
+    font-size: 20px;
+}
+#pedido-guardado{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+#login .button-realizar{
+    margin-left: 0rem;
+    width:25%;
+}
+#login .button-realizar{
+    position: absolute;
+    margin-top: 2rem;
+    right:2.3rem;
+}
+#login .button-realizar::after{
+    margin-left: -92px;
+}
+#login .button-realizar i{
+    margin-left: 30%;
+}
+.user{
+    position: absolute;
+    margin-left: 5rem;
+    margin-top: 5rem;
+    font-size: 2rem;
+    top: 10rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    border-bottom: 1px solid #000;
+}
+.button-cerrar-session{
+    position: absolute;
+    top: 11rem;
+    margin-left: 2rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #080505;
+    font-size: 20px;
+    font-weight: bolder;
+    border-bottom: 1px solid #000;
+    transition: ease-out 1s;
+    margin-right: 18%;
+}
+.button-aside{
+    padding:5px 0px;
+    color: rgb(197, 196, 196);
+    background:rgb(22, 22, 22);
+    font-family: 'Kanit', sans-serif;
+}
+.button-cerrar-session:hover{
+    background:#000;
+    color: #fff;
+    padding: 5px 5px;
+    border-bottom: rgb(182, 181, 181) 1.4px solid;
+}
+footer{
+    margin-top: 10rem;
+}
+.footer {
+    position: relative;
+}
+#principal{
+    min-height:100vh;
+}
+.footer p{
+    position: relative;
+    z-index:500;
+    padding-top: 7px;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    color: #fff;
+    width:100%;
+    background: #000;
+    height:3rem;
+    margin-top: 2rem;
+    bottom: 0; 
+}
+.categorias-title{
+    font-size: 40px;
+    letter-spacing:1.4px;
+    text-transform: uppercase;
+    line-height: 24px;
+    width:87.8%;
+    padding-bottom: 19px;
+    font-style: italic;
+    color: #000;
+    font-family: 'Barlow Condensed', sans-serif;
+    border-bottom:1px solid rgb(231, 228, 228) ;
+    font-weight: 500;
+    margin-left: 4.7rem;
+}
+
+/*Registro*/
+.registrarse-form{
+    padding-bottom: 2rem;
+    width: 70%;
+    height:auto;
+}
+.registrarse-form label{
+    font-family: 'Staatliches', cursive;
+    font-weight: 900;
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+}
+.registrarse-form form{
+    width: 70%;
+    margin: auto;
+    padding-top: 2rem;
+}
+.registrarse-form input{
+    padding:10px 20px;
+    height:3rem;
+    border: 1px solid rgba(7, 7, 7, 0.63);
+}
+.registrarse-form .registrarse-button{
+    padding:5px 0px;
+    color: rgb(197, 196, 196);
+    background:rgb(22, 22, 22);
+    font-family: 'Kanit', sans-serif;
+}
+.error{
+    text-align: center;
+    display:flex;
+    margin: auto;
+    width: 80%;
+    background: rgba(240, 3, 3, 0.63);
+    color: #fff;
+}
+.correcto{
+    text-align: center;
+    display:flex;
+    margin: auto;
+    width: 80%;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    background: rgba(5, 255, 89, 0.63);
+}
+/* ADD CATEGORIA*/
+.form-cat{
+    width:60%;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-left: 3vw;
+}
+.form-cat input[type="submit"]{
+    background: rgb(36, 36, 36);
+    color: #fff;
+    padding:0.5rem 0rem;
+}
+/*categorias*/
+.categorias{
+    background:rgb(34, 33, 33);
+    width:65%;
+    margin-top: 2rem;
+    padding: 2rem 0rem;
+    border-radius: 8px;
+    margin-left: 2.7vw;
+}
+.categorias p{
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    border: 1px solid #fff;
+    margin:0px 10px;
+    padding: 5px 0px;
+    color:rgb(236, 234, 234);
+}
+#button-cat{
+    width: 65%;
+    padding:0.7rem 0px;
+    margin-top: 1rem;
+    justify-content: center;
+    margin-left: 2.7vw;
+    display:flex;
+}
+.admin-cont{
+    background:#ffffff;
+    padding:3rem 0rem;
+    display:grid;
+    grid-template-columns: auto;
+    text-align: center;
+}
+.admin-cont h3{
+    font-family: 'Kanit', sans-serif;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+}
+.admin-cont .button-aside{
+    background:rgb(24, 24, 24);
+    color: rgb(229, 226, 226);
+    font-weight: 700;
+    margin: 0.7rem;
+}
+.button-cerrar{
+    font-family: 'Kanit', sans-serif;
+    color: rgb(248, 248, 248);
+    font-weight: 700;
+    justify-content: center;
+    margin-top: 0.8rem;
+    padding: 0.5rem 0rem;
+    background:rgb(173, 32, 32);
+    display:flex;
+}
+.button-pedidos{
+    font-family: 'Kanit', sans-serif;
+    color: rgb(248, 248, 248);
+    font-weight: 700;
+    justify-content: center;
+    margin-top: 0.8rem;
+    padding: 0.5rem 0rem;
+    background:rgb(42, 153, 32);
+    display:flex;
+}
+
+/*FORM  ADD PRODUCTO*/
+
+.form-product{
+    display:grid;
+    grid-template-columns: auto;
+    width:65%;
+    margin-left: 3vw;
+}
+.form-product input{
+    padding:10px 20px;
+    height:3rem;
+    border: 2px solid rgba(0, 0, 0, 0.63);
+    color:#000;
+    padding-left:5px;
+    font-size: 18px;
+    margin: 15px 0px;
+    width: 100%;
+}
+.form-product input[type="file"]{
+    background:#141414;
+    color: #fff;
+}
+.form-product textarea {
+    border: 2px solid rgba(0, 0, 0, 0.63);
+    padding:10px 20px;
+    color:#000;
+    padding-left:5px;
+}
+.form-product select {
+    color: #d4d3d3;
+    padding: 1rem 0rem;
+    background: rgb(0, 0, 0);
+    font-family: 'Staatliches', cursive;
+    border: 2px solid rgba(0, 0, 0, 0.63);
+}
+.form-product .button-aside {
+    color: rgb(236, 233, 233);
+    align-items: center;
+}
+.button-delete{
+    font-family: 'Staatliches', cursive;
+    font-size: 0.8rem;
+    padding:0.3rem 0.5rem;
+    background:#992121;
+    color: #fff;
+    font-weight: 700;
+    float: right;
+    margin: 0rem 1rem;
+}
+.button-edit{
+    float: right;
+    font-weight: 700;
+    font-family: 'Staatliches', cursive;
+    font-size: 0.8rem;
+    padding:0.3rem 0.5rem;
+    background:#b1b1b1;
+    color: rgb(0, 0, 0);
+}
+.img-edit{
+    width: 100px;
+}
+
+/*CARRITO IMG*/
+
+.carrito-img{
+    width:110px;
+}
+.title-carrito{
+    font-style: normal;
+    margin-left: 6rem;
+    width:auto;
+    border-bottom: none;
+    font-size: 2.3rem;
+}
+#title-carrito{
+    font-size: 1.8rem;
+    letter-spacing: 0px;
+}
+.info-pedido{
+    margin-left: 6.1rem;
+    margin-top: 0.3rem;
+    font-family: "AdihausDIN",Helvetica,Arial,sans-serif;
+}
+h4{
+    color:#161616;
+    font-weight: 200;
+    margin-top: 1rem;
+    margin-left: 6.02rem;
+    font-family: "AdihausDIN",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+}
+.info-pedido span{
+    margin-left: 7px;
+    font-weight: 800;
+}
+.info-pedido p{
+    letter-spacing: 1px;
+}
+.container-carrito{
+    margin-top: 1rem;
+}
+.carrito-prod-cont{
+    display:grid;
+    grid-template-columns:15.5rem auto;
+    margin-bottom: 1rem;
+    width:53.8%;
+    margin-left: 6.1rem;
+    border: 1px solid rgb(82, 82, 82);
+}
+.detalle-carrito-prod{
+    margin-top: 1rem;
+    position: relative;
+    font-size: 14px;
+    line-height: 19px;
+    font-family: "AdihausDIN",Helvetica,Arial,sans-serif;
+    font-weight: 100;
+    color: #4e4d4d;
+}
+.detalle-carrito-prod #tamaño{
+    line-height: 45px;
+}
+.carrito-prod-cont img {
+    width:auto;
+    height:14rem;
+}
+.prod-unidades{
+    text-align: center;
+    display:grid;
+    grid-template-columns:auto auto;
+    width:6.7rem;
+    align-items: center;
+    margin-top: 3rem;
+    border: 0.1px solid rgb(75, 75, 75);
+    color: #080808;
+    font-weight: 500;
+    height:3rem;
+}
+.prod-unidades p{
+    font-weight: 600;
+    color: #000000;
+}
+.buttons{
+    display: grid;
+}
+.buttons a{
+    border: none;
+    font-weight: 900;
+    margin: 1px 15px;
+    background:none;
+}
+.price{
+    display:grid;
+    grid-template-columns:auto auto;
+    float: right;
+}
+.price a{
+    font-family: "AdihausDIN",Helvetica,Arial,sans-serif;
+    margin-top: -8px;
+    margin-right: 15px;
+    font-size: 21px;
+}
+.price p{
+    font-family: "AdihausDIN",Helvetica,Arial,sans-serif;
+    margin: -1px 15px ;
+    font-size: 15px;
+}
+.button-realizar{
+    position: absolute;
+    font-family: "AdihausDIN",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    width:40%;
+    padding: 15px 0vw 15px 15px;
+    margin-left:6rem;
+    color: #f0f0f0;
+    font-weight: bolder;
+    background:#181717;
+}
+.button-realizar i {
+    font-size: 19px;
+    position:absolute;
+    margin-left: 70%;
+}
+.button-realizar::after{
+    content:" ";
+    padding: 9px 97% 18px 15px;
+    margin-left: -78px;
+    background:none;
+    border: 1px solid #181717;
+}
+/*HACER PEDIDO */   
+.pago{
+    position:absolute;
+    right:0%;
+    height:100vh;
+    top: 4.3rem;
+    padding-top: 2rem;
+    min-height: 34rem;
+    background:#fff;
+    width:35%;
+    z-index: 5;
+}
+.pago .button-pedido{
+    position: absolute;
+    font-family: "AdihausDIN",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    width:78.4%;
+    padding: 15px 0vw 15px 15px;
+    margin-left:2rem;
+    color: #f0f0f0;
+    font-weight: bolder;
+    background:#181717;
+}
+.pago .button-pedido::after{
+    content:" ";
+    padding: 9px 25.85vw 18px 15px;
+    margin-left: -87px;
+    background:none;
+    border: 1px solid #181717;
+}
+.pago i {
+    font-size: 19px;
+    position:absolute;
+    margin-left: 60%;
+}
+.pedido-data{
+    margin-left: 2rem;
+    margin-top: 0rem;
+    width:27.4vw;
+    height:13rem;
+    border: 1px solid rgb(207, 206, 206);
+}
+.pedido-data h1{
+    margin-left: 15px;
+    margin-top: 18px;
+}
+.pago-resumen-title{
+    font-size: 19px;
+    border: none;
+    font-style: normal;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+}
+.cont-letters div{
+    position: absolute;
+    margin-top: 1rem;
+}
+.right{
+    right:25%;
+    font-family: "AdihausDIN",Helvetica,Arial,sans-serif;
+    font-weight: 100;
+    padding-top: 1rem;
+}
+.mis .button-realizar{
+    position: absolute;
+    width:25%;
+    margin-top: 2rem;
+    right:2.3rem;
+}
+.mis .button-realizar::after{
+    margin-left: -92px;
+}
+.top{
+    font-size: 14px;
+    line-height: 19px;
+    font-family: "AdihausDIN",Helvetica,Arial,sans-serif;
+    font-weight: 100;
+    color: #4e4d4d;
+    padding-left: 15px;
+    padding-top: 1.5rem;
+}
+#top{
+    padding-top: 3rem;
+}
+#top-p{
+    font-size: 14px;
+    line-height: 19px;
+    font-family: "AdihausDIN",Helvetica,Arial,sans-serif;
+    font-weight: 100;
+    color: #4e4d4d;
+    padding-left: 15px;
+    margin-top: 4rem;
+}
+.entrega p{
+    padding-left: 1.2vw;
+    display: flex;
+    line-height: 19px;
+    font-family: "AdihausDIN",Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    color: #000000;
+    padding-left: 15px;
+    margin-top: 4rem;
+    margin-top: 6rem;
+}
+#en{
+    float: left;
+}
+.gra{
+    float: right;
+    margin-right: 25px;
+}
+#form-envio{
+    margin-left: 2rem;
+}
+h4{
+    font-family: "AdihausDIN",Helvetica,Arial,sans-serif;
+    margin-left: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-top: 1.4rem;
+}
+.ver-prod .button-realizar{
+    width:20rem;
+    right:5%;
+}
+.ver-prod .button-realizar::after{
+    margin-left: -11.5rem;
+}
+#entrega{
+    margin-left: 2rem;
+    font-size: 2rem;
+}
+#form-envio .button-realizar{
+    display:flex;
+    margin:0px;
+    justify-content: center;
+    width:49%;
+    padding:auto 0px ;
+    height:3rem;
+}
+#form-envio input{
+    height:2rem;
+}
+#form-envio input::placeholder{
+    font-size: 16px;
+}
+.iniciar-sesion input{
+    height:2.4rem;
+}
+/* PEDIDO CONFIRMADO */
+.pedido-confirmado{
+    margin-top: 1.6rem;
+    margin-left: 1rem;
+    background:#000000;
+    width: 64%;
+    font-family: "AdihausDIN",Helvetica,Arial,sans-serif;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.pedido-confirmado td{
+    font-size: 14px;
+    padding: 0.5rem 0rem;
+    border: 1px solid#ffffff;
+    color:rgb(0, 0, 0);
+    background:rgb(248, 248, 248);
+}
+.pedido-confirmado tr{
+    border-radius:8px;
+    background:#000;
+    padding: 4px 0px;
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #080505;
+    margin-bottom: 1rem;
+}
+.info{
+    font-size: 18px;
+    margin-left: 1rem;
+    font-family: "AdihausDIN",Helvetica,Arial,sans-serif;
+}
+.cambiar{
+    font-family: "AdihausDIN",Helvetica,Arial,sans-serif;
+    font-style:oblique;
+    margin: 1rem 0rem;   
+    margin-left: 1rem;
+}
+.dire{
+    font-family: "AdihausDIN",Helvetica,Arial,sans-serif;
+    margin-left: 1rem;
+    font-style:oblique;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+.pedido{
+    margin: 1rem 2rem;
+    width: 64%;
+    font-family: "AdihausDIN",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+}
